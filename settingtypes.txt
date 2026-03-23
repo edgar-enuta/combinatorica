@@ -1,0 +1,34 @@
+# Combinatorica Game Settings
+
+[Gameplay]
+
+# Enable the hunger system
+combinatorica_hunger_enabled (Enable hunger) bool true
+
+# Enable mob spawning
+combinatorica_mobs_enabled (Enable mobs) bool true
+
+# Enable PvP combat
+enable_pvp (Enable PvP) bool true
+
+[Starting Items]
+
+# Give new players starter items
+give_initial_stuff (Give initial stuff) bool true
+
+# Comma-separated list of items to give new players
+# Format: itemname count, itemname count, ...
+initial_stuff (Initial items) string default:pick_wood 1,default:torch 8,default:apple 4
+
+[Technology]
+
+# Enable the Techage technology progression system
+combinatorica_techage_enabled (Enable Techage) bool true
+
+[World Generation]
+
+# Enable the Nether dimension
+combinatorica_nether_enabled (Enable Nether) bool true
+
+# Enable extra biomes beyond the base set
+combinatorica_extra_biomes (Enable extra biomes) bool true
