@@ -66,5 +66,8 @@ function combinatorica.is_domain_enabled(name)
     if val == nil then
         return true
     end
+    if not val then
+        combinatorica.log(name, "action", "disabled by setting")
+    end
     return val
 end
