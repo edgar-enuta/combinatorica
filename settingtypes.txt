@@ -1,0 +1,58 @@
+[Combinatorica]
+
+[Core]
+cmb_core_nodes (Core Nodes) bool true
+cmb_core_tools (Core Tools) bool true
+cmb_core_player (Core Player) bool true
+
+[World & Survival]
+cmb_worldgen (World Generation) bool true
+cmb_dimensions (Dimensions) bool true
+cmb_structures (Structures) bool true
+cmb_mobs_framework (Mobs Framework) bool true
+cmb_mobs_hostile (Hostile Mobs) bool true
+cmb_mobs_passive (Passive Mobs) bool true
+cmb_combat (Combat) bool true
+cmb_armor (Armor) bool true
+cmb_enchanting (Enchanting) bool true
+cmb_brewing (Brewing) bool true
+cmb_farming (Farming) bool true
+cmb_food (Food) bool true
+cmb_fishing (Fishing) bool true
+cmb_crafting (Crafting) bool true
+cmb_storage (Storage) bool true
+cmb_inventory (Inventory) bool true
+cmb_hud (HUD) bool true
+cmb_xp (Experience) bool true
+cmb_weather (Weather) bool true
+cmb_music (Music) bool true
+
+[Tech & Automation]
+cmb_redstone (Redstone) bool true
+cmb_tech (Technology) bool true
+cmb_pipes (Pipes) bool true
+cmb_digilines (Digilines) bool true
+cmb_trains (Trains) bool true
+cmb_vehicles (Vehicles) bool true
+
+[Content & Quality of Life]
+cmb_decoration (Decoration) bool true
+cmb_dragons (Dragons) bool true
+cmb_beekeeping (Beekeeping) bool true
+cmb_maps_nav (Maps & Navigation) bool true
+cmb_books (Books) bool true
+cmb_banners (Banners) bool true
+cmb_beds (Beds) bool true
+cmb_protection (Protection) bool true
+cmb_worldedit (World Edit) bool true
+cmb_skins (Skins) bool true
+cmb_achievements (Achievements) bool true
+cmb_commands (Commands) bool true
+cmb_teleport (Teleportation) bool true
+cmb_help (Help) bool true
+cmb_magic (Magic) bool true
+cmb_npc_economy (NPC & Economy) bool true
+cmb_castle (Castles) bool true
+cmb_streets (Streets) bool true
+cmb_lucky_blocks (Lucky Blocks) bool true
+cmb_wine (Wine) bool true
