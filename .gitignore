@@ -1,6 +1,16 @@
 # Compiled Lua sources
 luac.out
 
+# Luanti world data (don't commit test worlds)
+worlds/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
 # luarocks build files
 *.src.rock
 *.zip
