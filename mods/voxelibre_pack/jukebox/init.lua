@@ -1,5 +1,7 @@
 -- Jukebox
 
+if not combinatorica.is_domain_enabled("jukebox") then return end
+
 core.register_node("jukebox:jukebox", {
     description = "Jukebox",
     tiles = {"jukebox_top.png", "jukebox_bottom.png", "jukebox_side.png"},

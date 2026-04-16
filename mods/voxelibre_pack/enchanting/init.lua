@@ -1,6 +1,8 @@
 -- Enchanting
 -- Enchantment table, enchantment registration, and tool/armor enchanting.
 
+if not combinatorica.is_domain_enabled("enchanting") then return end
+
 enchanting = {}
 enchanting.registered_enchantments = {}
 

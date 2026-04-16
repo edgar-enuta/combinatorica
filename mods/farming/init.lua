@@ -1,6 +1,8 @@
 -- Farming
 -- Extended farming system (Farming Redo-style).
 
+if not combinatorica.is_domain_enabled("farming") then return end
+
 farming = {}
 
 -- Register a hoe tool.

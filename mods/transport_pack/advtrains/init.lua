@@ -2,6 +2,8 @@
 -- Realistic train simulation with track laying, signals, and routing.
 -- This is a stub; the full advtrains mod will be integrated as a dependency.
 
+if not combinatorica.is_domain_enabled("advtrains") then return end
+
 advtrains = {}
 
 advtrains.trains = {}

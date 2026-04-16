@@ -1,6 +1,8 @@
 -- Biomes
 -- Registers biome definitions for world generation.
 
+if not combinatorica.is_domain_enabled("biomes") then return end
+
 local function register_base_biomes()
     -- Grassland
     core.register_biome({

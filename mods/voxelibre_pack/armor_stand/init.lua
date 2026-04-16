@@ -1,5 +1,7 @@
 -- Armor Stand
 
+if not combinatorica.is_domain_enabled("armor_stand") then return end
+
 core.register_node("armor_stand:armor_stand", {
     description = "Armor Stand",
     drawtype = "mesh",

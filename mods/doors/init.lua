@@ -1,6 +1,8 @@
 -- Doors
 -- Door, trapdoor, and fence gate registration API.
 
+if not combinatorica.is_domain_enabled("doors") then return end
+
 doors = {}
 
 -- Register a door.

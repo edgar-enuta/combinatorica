@@ -1,6 +1,8 @@
 -- Stairs
 -- API for registering stairs and slabs from any node.
 
+if not combinatorica.is_domain_enabled("stairs") then return end
+
 stairs = {}
 
 -- Register a stair node from a base material.

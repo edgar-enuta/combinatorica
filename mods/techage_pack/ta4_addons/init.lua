@@ -1,6 +1,8 @@
 -- TA4 Addons
 -- Advanced renewable energy and high-tech machines.
 
+if not combinatorica.features.techage then return end
+
 techage.register_generator("ta4_addons:solar_panel", {
     description = "TA4 Solar Panel",
     tiles = {"ta4_addons_solar_panel.png"},

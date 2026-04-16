@@ -1,6 +1,8 @@
 -- Copper
 -- Copper blocks with oxidation stages.
 
+if not combinatorica.is_domain_enabled("copper") then return end
+
 copper = {}
 
 local oxidation_stages = {

@@ -1,6 +1,8 @@
 -- Flowers
 -- Decorative flower nodes and mapgen decoration.
 
+if not combinatorica.is_domain_enabled("flowers") then return end
+
 local flowers_list = {
     {"rose", "Red Rose"},
     {"tulip", "Orange Tulip"},

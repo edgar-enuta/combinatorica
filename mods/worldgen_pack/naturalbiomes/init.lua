@@ -1,6 +1,8 @@
 -- Wilhelmines Natural Biomes
 -- Realistic natural biome environments.
 
+if not combinatorica.features.extra_biomes then return end
+
 naturalbiomes = {}
 
 local biomes = {

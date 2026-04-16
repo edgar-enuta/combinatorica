@@ -1,6 +1,8 @@
 -- Bonemeal
 -- Growth acceleration for plants and saplings.
 
+if not combinatorica.is_domain_enabled("bonemeal") then return end
+
 bonemeal = {}
 
 -- Apply bonemeal to a position, growing the plant if applicable.

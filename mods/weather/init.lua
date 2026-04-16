@@ -1,6 +1,8 @@
 -- Weather System
 -- Dynamic weather with rain, snow, and thunderstorms.
 
+if not combinatorica.is_domain_enabled("weather") then return end
+
 local weather = {}
 local current_weather = "clear"
 local weather_timer = 0

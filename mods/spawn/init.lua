@@ -1,6 +1,8 @@
 -- Spawn
 -- Manages spawn point placement and teleportation.
 
+if not combinatorica.is_domain_enabled("spawn") then return end
+
 local spawnpoint = core.settings:get("static_spawnpoint")
 
 if spawnpoint then

@@ -1,6 +1,8 @@
 -- Game Commands
 -- Provides gameplay-related chat commands.
 
+if not combinatorica.is_domain_enabled("game_commands") then return end
+
 core.register_chatcommand("killme", {
     description = "Kill yourself to respawn",
     func = function(name)

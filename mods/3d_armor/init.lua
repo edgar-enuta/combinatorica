@@ -1,6 +1,8 @@
 -- 3D Armor
 -- Visible armor with damage reduction.
 
+if not combinatorica.is_domain_enabled("3d_armor") then return end
+
 armor = {}
 armor.registered_armor = {}
 local player_armor = {}

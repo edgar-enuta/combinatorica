@@ -1,6 +1,8 @@
 -- Ethereal NG
 -- Rich overworld biomes with unique trees, plants, and terrain.
 
+if not combinatorica.features.extra_biomes then return end
+
 ethereal = {}
 
 local biomes = {

@@ -1,6 +1,8 @@
 -- Fishing
 -- Fishing rod, fish items, and loot table.
 
+if not combinatorica.is_domain_enabled("fishing") then return end
+
 fishing = {}
 
 local fish_loot = {

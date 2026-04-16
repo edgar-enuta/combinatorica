@@ -1,6 +1,8 @@
 -- More Ores
 -- Adds mithril, silver, and tin ores.
 
+if not combinatorica.is_domain_enabled("moreores") then return end
+
 local ores = {
     {name = "tin", desc = "Tin", depth = -128, scarcity = 10},
     {name = "silver", desc = "Silver", depth = -256, scarcity = 12},

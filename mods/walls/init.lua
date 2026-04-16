@@ -1,6 +1,8 @@
 -- Walls
 -- Wall nodes that connect to neighbors.
 
+if not combinatorica.is_domain_enabled("walls") then return end
+
 walls = {}
 
 function walls.register(name, desc, tiles, recipeitem, groups)

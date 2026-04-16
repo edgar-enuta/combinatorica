@@ -1,6 +1,8 @@
 -- Environmental Sounds
 -- Plays ambient sounds based on player surroundings.
 
+if not combinatorica.is_domain_enabled("env_sounds") then return end
+
 local SOUND_INTERVAL = 2.0
 
 local function get_ambience(player)

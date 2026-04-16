@@ -1,6 +1,8 @@
 -- Hoppers
 -- Item transport and sorting.
 
+if not combinatorica.is_domain_enabled("hoppers") then return end
+
 core.register_node("hoppers:hopper", {
     description = "Hopper",
     tiles = {"hoppers_top.png", "hoppers_bottom.png", "hoppers_side.png"},

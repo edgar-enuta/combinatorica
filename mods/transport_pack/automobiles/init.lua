@@ -2,6 +2,8 @@
 -- Driveable ground vehicles.
 -- This is a stub; the full automobiles mod will be integrated as a dependency.
 
+if not combinatorica.is_domain_enabled("automobiles") then return end
+
 automobiles = {}
 
 -- Register a vehicle type.

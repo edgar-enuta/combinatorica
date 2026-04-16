@@ -1,6 +1,8 @@
 -- X Panes
 -- Glass panes and iron bars that connect to neighbors.
 
+if not combinatorica.is_domain_enabled("xpanes") then return end
+
 xpanes = {}
 
 function xpanes.register_pane(name, def)

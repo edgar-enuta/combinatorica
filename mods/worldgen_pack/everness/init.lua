@@ -2,6 +2,8 @@
 -- Rich biome mod with custom surface, underground, and ocean biomes.
 -- Includes structures, dungeons, loot chests, and skybox overrides.
 
+if not combinatorica.features.extra_biomes then return end
+
 everness = {}
 
 -- Crystal biomes

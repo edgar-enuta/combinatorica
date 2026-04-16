@@ -1,6 +1,8 @@
 -- Wilhelmines Living Jungle
 -- Dense, vibrant jungle biomes.
 
+if not combinatorica.features.extra_biomes then return end
+
 livingjungle = {}
 
 core.register_biome({

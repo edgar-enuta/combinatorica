@@ -1,5 +1,7 @@
 -- Lanterns
 
+if not combinatorica.is_domain_enabled("lanterns") then return end
+
 core.register_node("lanterns:lantern", {
     description = "Lantern",
     tiles = {"lanterns_lantern.png"},

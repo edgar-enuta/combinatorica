@@ -1,6 +1,8 @@
 -- Boats
 -- Craftable boats for water travel.
 
+if not combinatorica.is_domain_enabled("boats") then return end
+
 boats = {}
 
 core.register_craftitem("boats:boat", {

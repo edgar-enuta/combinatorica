@@ -1,6 +1,8 @@
 -- Workstations
 -- Specialized crafting and processing stations.
 
+if not combinatorica.is_domain_enabled("workstations") then return end
+
 workstations = {}
 
 -- Anvil: repair and rename items

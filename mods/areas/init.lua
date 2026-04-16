@@ -2,6 +2,8 @@
 -- Protected region management.
 -- This is a stub; the full areas mod will be integrated as a dependency.
 
+if not combinatorica.is_domain_enabled("areas") then return end
+
 areas = {}
 areas.areas = {}
 

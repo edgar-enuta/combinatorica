@@ -1,6 +1,8 @@
 -- Simple Fast Inventory (sfinv)
 -- Provides a tabbed inventory formspec framework.
 
+if not combinatorica.is_domain_enabled("sfinv") then return end
+
 sfinv = {
     pages = {},
     pages_unordered = {},

@@ -1,6 +1,8 @@
 -- Potions & Brewing
 -- Brewing stand, potion effects, and status effect system.
 
+if not combinatorica.is_domain_enabled("potions") then return end
+
 potions = {}
 potions.registered_effects = {}
 potions.registered_potions = {}

@@ -10,6 +10,9 @@ if not minetest then
     minetest = core
 end
 
+-- Register metadata for all bundled domains.
+dofile(modpath .. "/domain_manifest.lua")
+
 -- Register compatibility shims for common mod APIs.
 -- These are activated via the integration system so they only run
 -- when the relevant mods are actually loaded.

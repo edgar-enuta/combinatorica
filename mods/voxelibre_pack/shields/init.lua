@@ -1,6 +1,8 @@
 -- Shields
 -- Blocking shield item.
 
+if not combinatorica.is_domain_enabled("shields") then return end
+
 shields = {}
 
 core.register_tool("shields:shield_wood", {

@@ -1,6 +1,8 @@
 -- Give Initial Stuff
 -- Provides starter items to new players.
 
+if not combinatorica.is_domain_enabled("give_initial_stuff") then return end
+
 local function give_initial_stuff(player)
     local inv = player:get_inventory()
     local items_str = combinatorica.config.get("initial_stuff",

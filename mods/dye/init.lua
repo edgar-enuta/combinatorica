@@ -1,6 +1,8 @@
 -- Dye
 -- Craftable dyes from flowers and other materials.
 
+if not combinatorica.is_domain_enabled("dye") then return end
+
 dye = {}
 
 local dye_colors = {

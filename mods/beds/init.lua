@@ -1,6 +1,8 @@
 -- Beds
 -- Sleep to skip night and set respawn point.
 
+if not combinatorica.is_domain_enabled("beds") then return end
+
 beds = {}
 beds.player_beds = {}
 

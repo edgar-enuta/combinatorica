@@ -1,5 +1,7 @@
 -- Campfires
 
+if not combinatorica.is_domain_enabled("campfires") then return end
+
 core.register_node("campfires:campfire", {
     description = "Campfire",
     tiles = {"campfires_log.png"},

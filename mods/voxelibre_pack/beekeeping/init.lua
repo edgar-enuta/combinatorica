@@ -1,6 +1,8 @@
 -- Beekeeping
 -- Bees, hives, honey blocks, and honeycomb.
 
+if not combinatorica.is_domain_enabled("beekeeping") then return end
+
 beekeeping = {}
 
 core.register_node("beekeeping:beehive", {

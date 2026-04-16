@@ -1,5 +1,7 @@
 -- Composters
 
+if not combinatorica.is_domain_enabled("composters") then return end
+
 core.register_node("composters:composter", {
     description = "Composter",
     tiles = {"composters_top.png", "composters_bottom.png", "composters_side.png"},

@@ -1,6 +1,8 @@
 -- Bones
 -- Drops a bone node containing player inventory on death.
 
+if not combinatorica.is_domain_enabled("bones") then return end
+
 core.register_node("bones:bones", {
     description = "Bones",
     tiles = {

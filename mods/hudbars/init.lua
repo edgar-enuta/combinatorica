@@ -1,6 +1,8 @@
 -- HUD Bars
 -- Framework for custom HUD bars (health, hunger, armor, etc.)
 
+if not combinatorica.is_domain_enabled("hudbars") then return end
+
 hudbars = {}
 hudbars.registered_bars = {}
 

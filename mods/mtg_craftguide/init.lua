@@ -1,6 +1,8 @@
 -- Crafting Guide
 -- Browse crafting recipes in-game via sfinv tab.
 
+if not combinatorica.is_domain_enabled("mtg_craftguide") then return end
+
 sfinv.register_page("mtg_craftguide:craftguide", {
     title = "Recipes",
     get = function(self, player, context)

@@ -1,5 +1,7 @@
 -- Fireworks
 
+if not combinatorica.is_domain_enabled("fireworks") then return end
+
 core.register_craftitem("fireworks:rocket", {
     description = "Firework Rocket",
     inventory_image = "fireworks_rocket.png",

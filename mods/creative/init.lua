@@ -1,6 +1,8 @@
 -- Creative Mode
 -- Provides creative inventory, infinite items, and instant breaking.
 
+if not combinatorica.is_domain_enabled("creative") then return end
+
 creative = {}
 
 -- Check if creative mode is enabled globally or per-player.

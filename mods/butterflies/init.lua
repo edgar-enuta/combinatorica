@@ -1,6 +1,8 @@
 -- Butterflies
 -- Ambient decorative butterfly entities.
 
+if not combinatorica.is_domain_enabled("butterflies") then return end
+
 local butterfly_types = {"white", "red", "violet"}
 
 for _, color in ipairs(butterfly_types) do

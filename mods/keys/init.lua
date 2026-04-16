@@ -1,6 +1,8 @@
 -- Keys
 -- Key items for locked doors and chests.
 
+if not combinatorica.is_domain_enabled("keys") then return end
+
 core.register_craftitem("keys:key", {
     description = "Key",
     inventory_image = "keys_key.png",

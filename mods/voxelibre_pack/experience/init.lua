@@ -1,6 +1,8 @@
 -- Experience System
 -- XP orbs, levels, and experience management.
 
+if not combinatorica.is_domain_enabled("experience") then return end
+
 experience = {}
 local player_xp = {}
 

@@ -1,11 +1,21 @@
 # Combinatorica Game Settings
+#
+# Combinatorica bundles ~80 mods organized by category. Each mod is a
+# "domain" that can be individually enabled/disabled via its
+# combinatorica_<name>_enabled setting below. Defaults are all true — the
+# game works out of the box; tailor for your server.
+#
+# Some coarse feature flags (combinatorica_hunger_enabled,
+# combinatorica_mobs_enabled, combinatorica_techage_enabled,
+# combinatorica_nether_enabled, combinatorica_extra_biomes) disable entire
+# subsystems at once and take precedence over individual per-mod flags.
 
 [Gameplay]
 
 # Enable the hunger system
 combinatorica_hunger_enabled (Enable hunger) bool true
 
-# Enable mob spawning
+# Enable mob spawning (disables the entire mobs_pack)
 combinatorica_mobs_enabled (Enable mobs) bool true
 
 # Enable PvP combat
@@ -22,7 +32,7 @@ initial_stuff (Initial items) string default:pick_wood 1,default:torch 8,default
 
 [Technology]
 
-# Enable the Techage technology progression system
+# Enable the Techage technology progression (disables the entire techage_pack)
 combinatorica_techage_enabled (Enable Techage) bool true
 
 [World Generation]
@@ -30,5 +40,94 @@ combinatorica_techage_enabled (Enable Techage) bool true
 # Enable the Nether dimension
 combinatorica_nether_enabled (Enable Nether) bool true
 
-# Enable extra biomes beyond the base set
+# Enable extra biomes beyond the base set (disables the entire worldgen_pack)
 combinatorica_extra_biomes (Enable extra biomes) bool true
+
+[Core Infrastructure]
+# Foundational mods that most gameplay systems depend on.
+# combinatorica_core, combinatorica_compat, default, and player_api are
+# always on and cannot be disabled here.
+
+combinatorica_sfinv_enabled (Enable sfinv survival inventory) bool true
+combinatorica_creative_enabled (Enable creative mode mod) bool true
+combinatorica_game_commands_enabled (Enable game chat commands) bool true
+combinatorica_keys_enabled (Enable keys / lock system) bool true
+combinatorica_screwdriver_enabled (Enable screwdriver tool) bool true
+combinatorica_spawn_enabled (Enable spawn-point management) bool true
+
+[Blocks & Materials]
+
+combinatorica_bucket_enabled (Enable buckets) bool true
+combinatorica_doors_enabled (Enable doors) bool true
+combinatorica_dye_enabled (Enable dyes) bool true
+combinatorica_moreores_enabled (Enable more ores) bool true
+combinatorica_stairs_enabled (Enable stairs / slabs) bool true
+combinatorica_tnt_enabled (Enable TNT) bool true
+combinatorica_vessels_enabled (Enable vessels / bottles) bool true
+combinatorica_walls_enabled (Enable walls) bool true
+combinatorica_wool_enabled (Enable wool) bool true
+combinatorica_xpanes_enabled (Enable glass panes / iron bars) bool true
+combinatorica_bonemeal_enabled (Enable bonemeal) bool true
+
+[World & Environment]
+
+combinatorica_biomes_enabled (Enable base biomes) bool true
+combinatorica_butterflies_enabled (Enable butterflies) bool true
+combinatorica_env_sounds_enabled (Enable environmental sounds) bool true
+combinatorica_fire_enabled (Enable fire / flint & steel) bool true
+combinatorica_fireflies_enabled (Enable fireflies) bool true
+combinatorica_flowers_enabled (Enable flowers) bool true
+combinatorica_weather_enabled (Enable weather effects) bool true
+combinatorica_dungeon_loot_enabled (Enable dungeon loot) bool true
+
+[Player Systems]
+
+combinatorica_3d_armor_enabled (Enable 3D armor) bool true
+combinatorica_beds_enabled (Enable beds / sleeping) bool true
+combinatorica_farming_enabled (Enable farming) bool true
+
+[Quality of Life]
+
+combinatorica_areas_enabled (Enable area protection) bool true
+combinatorica_binoculars_enabled (Enable binoculars) bool true
+combinatorica_bones_enabled (Enable death bones) bool true
+combinatorica_sethome_enabled (Enable /sethome and /home) bool true
+combinatorica_worldedit_enabled (Enable WorldEdit) bool true
+
+[User Interface]
+
+combinatorica_hudbars_enabled (Enable HUD bars) bool true
+combinatorica_map_enabled (Enable minimap) bool true
+combinatorica_mtg_craftguide_enabled (Enable craft guide) bool true
+combinatorica_unified_inventory_enabled (Enable unified inventory) bool true
+
+[Transport]
+
+combinatorica_advtrains_enabled (Enable advtrains) bool true
+combinatorica_automobiles_enabled (Enable automobiles) bool true
+combinatorica_boats_enabled (Enable boats) bool true
+combinatorica_carts_enabled (Enable minecarts) bool true
+
+[VoxeLibre Features]
+# Individual toggles within voxelibre_pack. Features inspired by
+# VoxeLibre/Mineclonia.
+
+combinatorica_armor_stand_enabled (Enable armor stands) bool true
+combinatorica_banners_enabled (Enable banners) bool true
+combinatorica_beekeeping_enabled (Enable beekeeping) bool true
+combinatorica_bows_enabled (Enable bows / arrows) bool true
+combinatorica_campfires_enabled (Enable campfires) bool true
+combinatorica_composters_enabled (Enable composters) bool true
+combinatorica_copper_enabled (Enable copper) bool true
+combinatorica_deepslate_enabled (Enable deepslate) bool true
+combinatorica_enchanting_enabled (Enable enchanting) bool true
+combinatorica_experience_enabled (Enable XP / levels) bool true
+combinatorica_fireworks_enabled (Enable fireworks) bool true
+combinatorica_fishing_enabled (Enable fishing) bool true
+combinatorica_hoppers_enabled (Enable hoppers) bool true
+combinatorica_jukebox_enabled (Enable jukeboxes / music discs) bool true
+combinatorica_lanterns_enabled (Enable lanterns) bool true
+combinatorica_potions_enabled (Enable potions / brewing) bool true
+combinatorica_shields_enabled (Enable shields) bool true
+combinatorica_the_end_enabled (Enable the End dimension) bool true
+combinatorica_workstations_enabled (Enable smithing / workstations) bool true

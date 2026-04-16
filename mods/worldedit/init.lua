@@ -2,6 +2,8 @@
 -- In-game world editing commands for admins and creative mode.
 -- This is a stub; the full WorldEdit mod will be integrated as a dependency.
 
+if not combinatorica.is_domain_enabled("worldedit") then return end
+
 worldedit = {}
 
 -- Placeholder: position storage per player

@@ -1,6 +1,8 @@
 -- Banners
 -- Decorative banners with customizable patterns.
 
+if not combinatorica.is_domain_enabled("banners") then return end
+
 banners = {}
 
 local colors = {"white","grey","dark_grey","black","red","orange","yellow","green","dark_green","blue","cyan","violet","magenta","pink","brown"}

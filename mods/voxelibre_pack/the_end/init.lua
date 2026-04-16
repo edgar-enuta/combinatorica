@@ -1,6 +1,8 @@
 -- The End
 -- Second alternate dimension accessible via End portal.
 
+if not combinatorica.is_domain_enabled("the_end") then return end
+
 the_end = {}
 
 local END_DEPTH = -27000

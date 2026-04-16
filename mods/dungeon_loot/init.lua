@@ -1,6 +1,8 @@
 -- Dungeon Loot
 -- Generates loot chests in dungeon structures.
 
+if not combinatorica.is_domain_enabled("dungeon_loot") then return end
+
 dungeon_loot = {}
 dungeon_loot.registered_loot = {}
 

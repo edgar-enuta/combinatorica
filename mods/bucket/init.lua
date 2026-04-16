@@ -1,6 +1,8 @@
 -- Bucket
 -- Buckets for picking up and placing liquid source nodes.
 
+if not combinatorica.is_domain_enabled("bucket") then return end
+
 bucket = {}
 bucket.liquids = {}
 

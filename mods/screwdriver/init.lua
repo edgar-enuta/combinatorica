@@ -1,6 +1,8 @@
 -- Screwdriver
 -- Node rotation tool.
 
+if not combinatorica.is_domain_enabled("screwdriver") then return end
+
 core.register_tool("screwdriver:screwdriver", {
     description = "Screwdriver (rotate nodes)",
     inventory_image = "screwdriver.png",

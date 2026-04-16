@@ -5,6 +5,7 @@ combinatorica = {}
 
 local modpath = core.get_modpath("combinatorica_core")
 
+dofile(modpath .. "/domains.lua")
 dofile(modpath .. "/api.lua")
 dofile(modpath .. "/interop.lua")
 dofile(modpath .. "/config.lua")

@@ -1,6 +1,8 @@
 -- Fire
 -- Fire nodes and spreading mechanics.
 
+if not combinatorica.is_domain_enabled("fire") then return end
+
 core.register_node("fire:basic_flame", {
     description = "Fire",
     drawtype = "firelike",

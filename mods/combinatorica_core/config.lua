@@ -46,3 +46,25 @@ core.log("action", "[combinatorica_core] Feature flags: "
     .. ", techage=" .. tostring(combinatorica.features.techage)
     .. ", nether=" .. tostring(combinatorica.features.nether)
     .. ", extra_biomes=" .. tostring(combinatorica.features.extra_biomes))
+
+-- Check whether a domain is enabled. A domain is enabled iff:
+--   (a) it has been registered with always_on = true, OR
+--   (b) its combinatorica_<name>_enabled setting is unset or true.
+-- Defaults to true so that new mods work out-of-the-box without a setting.
+--
+-- Usage at the top of a mod's init.lua:
+--   if not combinatorica.is_domain_enabled(core.get_current_modname()) then return end
+--
+-- @param name string: domain name
+-- @return boolean
+function combinatorica.is_domain_enabled(name)
+    local domain = combinatorica.domains[name]
+    if domain and domain.always_on then
+        return true
+    end
+    local val = settings:get_bool("combinatorica_" .. name .. "_enabled")
+    if val == nil then
+        return true
+    end
+    return val
+end

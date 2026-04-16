@@ -1,6 +1,8 @@
 -- Vessels
 -- Glass bottles, drinking glasses, and display shelves.
 
+if not combinatorica.is_domain_enabled("vessels") then return end
+
 core.register_craftitem("vessels:glass_bottle", {
     description = "Empty Glass Bottle",
     inventory_image = "vessels_glass_bottle.png",

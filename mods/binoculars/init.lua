@@ -1,6 +1,8 @@
 -- Binoculars
 -- Zoom tool for looking at distant objects.
 
+if not combinatorica.is_domain_enabled("binoculars") then return end
+
 core.register_craftitem("binoculars:binoculars", {
     description = "Binoculars",
     inventory_image = "binoculars_binoculars.png",

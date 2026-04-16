@@ -1,6 +1,8 @@
 -- Set Home
 -- /sethome and /home commands.
 
+if not combinatorica.is_domain_enabled("sethome") then return end
+
 local homes = {}
 
 core.register_chatcommand("sethome", {

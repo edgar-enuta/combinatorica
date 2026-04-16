@@ -1,6 +1,8 @@
 -- Caverealms Lite
 -- Underground cave biomes with crystals, moss, and unique formations.
 
+if not combinatorica.features.extra_biomes then return end
+
 caverealms = {}
 
 -- Glowing crystal nodes

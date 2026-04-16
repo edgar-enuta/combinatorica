@@ -1,6 +1,8 @@
 -- Bows & Arrows
 -- Ranged combat system.
 
+if not combinatorica.is_domain_enabled("bows") then return end
+
 bows = {}
 
 core.register_craftitem("bows:arrow", {

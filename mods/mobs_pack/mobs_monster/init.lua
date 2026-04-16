@@ -1,6 +1,8 @@
 -- Mobs Monsters
 -- Hostile mobs that spawn in darkness.
 
+if not combinatorica.features.mobs then return end
+
 local monsters = {
     {name = "zombie", hp = 20, damage = 3, walk_velocity = 1.5},
     {name = "skeleton", hp = 15, damage = 4, walk_velocity = 1.2},

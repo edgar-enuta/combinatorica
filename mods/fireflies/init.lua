@@ -1,6 +1,8 @@
 -- Fireflies
 -- Ambient glowing firefly nodes.
 
+if not combinatorica.is_domain_enabled("fireflies") then return end
+
 core.register_node("fireflies:firefly", {
     description = "Firefly",
     drawtype = "plantlike",

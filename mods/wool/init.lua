@@ -1,6 +1,8 @@
 -- Wool
 -- Colored wool blocks from dye + white wool.
 
+if not combinatorica.is_domain_enabled("wool") then return end
+
 local colors = {
     "white", "grey", "dark_grey", "black",
     "red", "orange", "yellow", "green",

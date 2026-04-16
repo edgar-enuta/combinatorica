@@ -1,6 +1,8 @@
 -- Mobs Animals
 -- Passive farm and wild animals.
 
+if not combinatorica.features.mobs then return end
+
 local animals = {
     {name = "cow", hp = 10, drops = {{name = "mobs_animal:beef_raw", chance = 1, min = 1, max = 3}}},
     {name = "sheep", hp = 8, drops = {{name = "wool:white", chance = 1, min = 1, max = 2}}},

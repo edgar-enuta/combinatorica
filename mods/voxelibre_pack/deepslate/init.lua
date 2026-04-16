@@ -1,6 +1,8 @@
 -- Deepslate
 -- Underground stone variant found at deep levels.
 
+if not combinatorica.is_domain_enabled("deepslate") then return end
+
 core.register_node("deepslate:deepslate", {
     description = "Deepslate",
     tiles = {"deepslate_top.png", "deepslate_top.png", "deepslate_side.png"},

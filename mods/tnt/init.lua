@@ -1,6 +1,8 @@
 -- TNT
 -- Explosive blocks with blast radius.
 
+if not combinatorica.is_domain_enabled("tnt") then return end
+
 tnt = {}
 
 function tnt.boom(pos, def)

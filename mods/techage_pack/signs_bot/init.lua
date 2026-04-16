@@ -1,6 +1,8 @@
 -- Signs Bot
 -- Programmable robot that follows sign instructions.
 
+if not combinatorica.features.techage then return end
+
 signs_bot = {}
 
 core.register_node("signs_bot:bot_box", {

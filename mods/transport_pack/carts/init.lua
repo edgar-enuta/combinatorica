@@ -1,6 +1,8 @@
 -- Minecarts
 -- Rail system with rideable minecarts.
 
+if not combinatorica.is_domain_enabled("carts") then return end
+
 carts = {}
 
 core.register_node("carts:rail", {

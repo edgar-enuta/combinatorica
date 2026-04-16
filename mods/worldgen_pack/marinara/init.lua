@@ -1,6 +1,8 @@
 -- Wilhelmines Marinara
 -- Marine and coastal biomes.
 
+if not combinatorica.features.extra_biomes then return end
+
 marinara = {}
 
 core.register_biome({

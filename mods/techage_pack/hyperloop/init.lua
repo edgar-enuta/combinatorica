@@ -1,6 +1,8 @@
 -- Hyperloop
 -- Fast transportation tube system.
 
+if not combinatorica.features.techage then return end
+
 hyperloop = {}
 
 core.register_node("hyperloop:tube", {
